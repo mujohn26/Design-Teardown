@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: grey;
+    padding: 10px;
+    align-items: center;
+   
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a img{
+    filter: invert();
+}
+.nav-links{
+    padding: 10px;
+    border-radius: 5px;
+}
+.nav-links:hover{
+    background-color: black;
+    
+}
+.more{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)    ;
+}
+.container-heading{
+    display: flex;
+    justify-content: center;
+    color: black;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+    margin-top: -20px;
+}
+.feature-article1{
+    background-color:#767676;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.feature-article1 div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.feature-article1 div div{
+margin-left: 25px;
+}
+.feature-article1 div div p{
+  
+    }
+.feature-article2{
+    background-color:#656565;
+
+}
+.feature-article3{
+    background-color: #555;
+    height: 720px;
+
+}
+.feature-article4{
+    background-color:#444;
+
+}
