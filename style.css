@@ -88,6 +88,7 @@ video {
 }
 body {
   color: white;
+  background-color: lightgray;
 }
 /* Navigation */
 nav {
@@ -174,17 +175,24 @@ section {
   text-justify: center;
   column-gap: 10px;
   margin-bottom: 50px;
+  background-color: lightgray;
 }
-
+section .react {
+  margin-left: 30px;
+  padding: 20px 10px;
+}
 .react-date {
   margin-bottom: 10px;
 }
 
 .react-title {
   margin-bottom: 10px;
+  text-decoration: underline;
+  font-size: 22px;
 }
 .react-author {
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 .react-text {
@@ -193,51 +201,109 @@ section {
 .react:hover {
   background-color: white;
   transform: 0.1s ease-out;
-  padding: 30px 30px;
+  padding: 50px 30px 0 30px;
 }
 /* menbership section */
 .membership {
   color: white;
-  display: flex;
+  background-color: lightgray;
+  display: grid;
+  grid-template-areas: "grammarly smashing";
 }
 .grammarly {
   background-color: green;
-  color: black;
+  color: white;
   border-radius: 5px;
   width: 360px;
   height: 220px;
+  grid-area: grammarly;
+  display: flex;
+  flex-direction: column;
   align-self: center;
   justify-content: center;
   margin-right: 30px;
   margin-left: 20px;
+  padding: 0 10px 0 10px;
+}
+.grammarly button {
+  margin-top: 10px;
+}
+.grammarly img {
+  width: 250px;
+  filter: invert();
+  display: flex;
+  justify-self: center;
+  padding-bottom: 20px;
 }
 .smashing-members {
-  background-color: red;
+  background-color: lightcoral;
   height: 650px;
-  align-self: center;
-  border-radius: 5px;
-  text-align: center;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  grid-area: smashing;
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 0 30px;
 }
 .smashing-members img {
   width: 240px;
   height: 290px;
-  justify-content: center;
 }
+.smashing-members a {
+  color: white;
+  padding: 10px 0 10px 0;
+}
+.smashing-numbers {
+  font-size: 30px;
+  font-weight: 500;
+}
+.smashing-members button {
+  margin: 40px 0 20px 270px;
+}
+
+/* smashing-tv */
 .smashing-tv {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-left: 20px;
 }
-.react1 {
-  background: grey;
-  width: 400px;
+.smashing h2 {
+  font-size: 25px;
+  font-weight: 500px;
+  text-decoration: underline;
+  padding-bottom: 30px;
+}
+.smashing-tv.react {
+  padding-bottom: 30px;
 }
 .smashing {
-  height: 680px;
-  background-color: red;
+  background-color: lightcoral;
+  margin: 0 30px 30px 0;
+  padding: 0 50px 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.smashing p {
+  padding: 30px 0 30px 40px;
 }
 .smashing img {
   width: 240px;
   height: 290px;
 }
-footer {
-  background-color: red;
+.smahing button {
+  padding: 20px 0 20px 0;
+}
+.smashing a {
+  color: whitesmoke;
+}
+
+/* latest articles */
+.latest-articles {
+  text-align: center;
+  color: #444;
 }
