@@ -198,27 +198,46 @@ section {
 /* menbership section */
 .membership {
   color: white;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 250px 1fr;
+  display: flex;
 }
 .grammarly {
-  background-color: greenyellow;
+  background-color: green;
   color: black;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  line-height: 60px;
+  width: 360px;
+  height: 220px;
+  align-self: center;
+  justify-content: center;
+  margin-right: 30px;
+  margin-left: 20px;
 }
 .smashing-members {
   background-color: red;
-  display: flex;
-  line-height: 40px;
-  justify-self: end;
-  flex-direction: column;
+  height: 650px;
+  align-self: center;
   border-radius: 5px;
+  text-align: center;
 }
 .smashing-members img {
   width: 240px;
   height: 290px;
+  justify-content: center;
+}
+.smashing-tv {
+  display: flex;
+}
+.react1 {
+  background: grey;
+  width: 400px;
+}
+.smashing {
+  height: 680px;
+  background-color: red;
+}
+.smashing img {
+  width: 240px;
+  height: 290px;
+}
+footer {
+  background-color: red;
 }
