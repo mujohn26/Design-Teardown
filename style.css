@@ -1,72 +1,224 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-body{
-    color: white;
+body {
+  color: white;
 }
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: grey;
-    padding: 10px;
-    align-items: center;
-   
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: grey;
+  padding: 10px;
+  align-items: center;
 }
-nav a{
-    text-decoration: none;
-    color: white;
-}
-nav a img{
-    filter: invert();
-}
-.nav-links{
-    padding: 10px;
-    border-radius: 5px;
-}
-.nav-links:hover{
-    background-color: black;
-    
-}
-.more{
-    background-color: lightgray;
-    padding: 10px;
-    border-radius: 5px;
-}
-.container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr)    ;
-}
-.container-heading{
-    display: flex;
-    justify-content: center;
-    color: black;
-    position: relative;
-    top: 20px;
-    z-index: 1;
-    margin-top: -20px;
-}
-.feature-article1{
-    background-color:#767676;
-    height: 720px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.feature-article2{
-    background-color:#656565;
 
+nav a {
+  text-decoration: none;
+  color: white;
 }
-.feature-article3{
-    background-color: #555;
-    height: 720px;
-
+nav a img {
+  filter: invert();
 }
-.feature-article4{
-    background-color:#444;
+.nav-links {
+  padding: 10px;
+  border-radius: 5px;
+}
+.nav-links:hover {
+  background-color: black;
+}
+.more {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container-heading {
+  display: flex;
+  justify-content: center;
+  color: black;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+  margin-top: -20px;
+}
+.feature-article1 {
+  background-color: #767676;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+}
+.feature-article1 div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.feature-article1 div div {
+  margin-left: 25px;
+}
 
+.feature-article2 {
+  background-color: #656565;
+}
+
+.feature-article3 {
+  background-color: #555;
+}
+
+.feature-article4 {
+  background-color: #444;
+}
+/* section1 */
+section {
+  color: black;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 50px;
+}
+.react {
+  color: black;
+  text-justify: center;
+  column-gap: 10px;
+  margin-bottom: 50px;
+}
+
+.react-date {
+  margin-bottom: 10px;
+}
+
+.react-title {
+  margin-bottom: 10px;
+}
+.react-author {
+  margin-bottom: 10px;
+}
+
+.react-text {
+  margin-bottom: 20px;
+}
+.react:hover {
+  background-color: white;
+  transform: 0.1s ease-out;
+  padding: 30px 30px;
+}
+/* menbership section */
+.membership {
+  color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+.grammarly {
+  background-color: greenyellow;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+}
+.smashing-members {
+  background-color: red;
+  display: flex;
+  line-height: 40px;
+  justify-self: end;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.smashing-members img {
+  width: 240px;
+  height: 290px;
 }
